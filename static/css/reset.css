@@ -1,0 +1,101 @@
+/*-------------------------------reset css---------------------------------------------  */
+/* 把标签默认的间距设为0 */
+body,ul,ol,p,h1,h2,h3,h4,h5,h6,dl,dd,select,input,textarea,form{margin:0;padding:0;box-sizing:border-box;}
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    tap-highlight-color: rgba(255,0,0,0.2);
+    -webkit-tap-highlight-color: rgba(255,0,0,0.1);
+}
+body{
+    font-size:14px;
+    font-family:"Microsoft YaHei",'sans-serif';
+    color:#333;
+}
+
+/* 让h标签文字大小继承body的文字设置 */
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+
+/* 去掉列表默认的图标 */
+ul,ol{list-style:none;}
+
+/* 去掉em默认的斜体 */
+em{font-style: normal;}
+
+/* 去掉a标签默认的下划线 */
+a{text-decoration:none;color:#333;}
+
+input,textarea{
+    border:none;
+    outline:none;
+    resize:none;
+    /*元素的外观*/
+    /*-webkit-appearance: none;*/
+}
+
+/* 去掉加链接时产生的框线 */
+/*img{border:0;}*/
+
+/*----------------------------common css------------------------------------  */
+/* 清除浮动 */
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:block;
+    visibility: hidden;
+    line-height: 0;
+    height:0;
+    clear:both;
+}
+
+
+/* 浮动 */
+.fl{float:left}
+.fr{float:right}
+
+.m_l10{
+    margin-left:10px;
+}
+.m_r10{
+    margin-right:10px;
+}
+.m_t10{
+    margin-top:10px;
+}
+.m_b10{
+    margin-bottom:10px;
+}
+
+/*初始化默认样式封装*/
+header{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    /*background:#fff;*/
+    /*position:fixed;*/
+    position:relative;
+    /*top:0;*/
+    /*left:0;*/
+}
+footer{
+    width:100%;
+    height:40px;
+    background:rgba(255,0,0,0.7);
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+.width_10{width:10%;}
+.width_20{width:20%;}
+.width_30{width:30%;}
+.width_40{width:40%;}
+.width_50{width:50%;}
+.width_60{width:60%;}
+.width_70{width:70%;}
+.width_80{width:80%;}
+.width_90{width:90%;}
+.width_100{width:100%;}
